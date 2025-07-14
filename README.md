@@ -30,16 +30,27 @@ This is a full-stack **RAG (Retrieval-Augmented Generation)** application built 
 rag_app/
 
 ├──app/
+
 │ ├──main.py # FastAPI app with endpoints
+
 │ ├──document_processor.py # File reading and text chunking logic
+
 │ ├──vector_store.py # FAISS logic: embedding, storage, retrieval
+
 │ ├──embedding.py # Embedding generator using SentenceTransformer
+
 │ ├──llm.py # Groq API integration (LLama3)
+
 ├──gradio_app
+
 │ ├──ui.py # Gradio frontend (upload + question UI)
+
 ├──uploaded_files
+
 ├──groq_api_key.txt
+
 ├──requirements.txt # Python dependencies
+
 └──README.md # Project documentation
 
 ---
