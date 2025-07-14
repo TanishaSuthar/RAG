@@ -28,25 +28,25 @@ This is a full-stack **RAG (Retrieval-Augmented Generation)** application built 
 
 ## 📂 Project Structure
 rag_app/
-├── app/
-│ ├── main.py # FastAPI app with endpoints
-│ ├── document_processor.py # File reading and text chunking logic
-│ ├── vector_store.py # FAISS logic: embedding, storage, retrieval
-│ ├── embedding.py # Embedding generator using SentenceTransformer
-│ ├── llm.py # Groq API integration (LLama3)
+├──app/
+│ ├──main.py # FastAPI app with endpoints
+│ ├──document_processor.py # File reading and text chunking logic
+│ ├──vector_store.py # FAISS logic: embedding, storage, retrieval
+│ ├──embedding.py # Embedding generator using SentenceTransformer
+│ ├──llm.py # Groq API integration (LLama3)
 ├──gradio_app
-│ ├── ui.py # Gradio frontend (upload + question UI)
+│ ├──ui.py # Gradio frontend (upload + question UI)
 ├──uploaded_files
-├── groq_api_key.txt
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├──groq_api_key.txt
+├──requirements.txt # Python dependencies
+└──README.md # Project documentation
 
 ---
 
 ## Installation
 1. installing requirements: pip install -r requirements.txt
-2. Start the FastAPI backend with the command in cmd: uvicorn app.main:app --reload
-3. For gradio interface, run command in cmd: python gradio_app\ui.py
+2. Start the FastAPI backend with the command in cmd: uvicorn app.main:app --reload, then go to http://127.0.0.1:8000 (or the link it shows in cmd)
+3. For gradio interface, run command in cmd: python gradio_app\ui.py, Then go to: http://localhost:7860
 
 ---
 
