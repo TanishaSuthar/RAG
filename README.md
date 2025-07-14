@@ -28,6 +28,7 @@ This is a full-stack **RAG (Retrieval-Augmented Generation)** application built 
 
 ## 📂 Project Structure
 rag_app/
+
 ├──app/
 │ ├──main.py # FastAPI app with endpoints
 │ ├──document_processor.py # File reading and text chunking logic
